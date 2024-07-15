@@ -1,6 +1,6 @@
-import { Link, Outlet,useNavigate } from "react-router-dom"; //引入Link和Outlet
+import { Outlet,useNavigate } from "react-router-dom"; //引入Link和Outlet
 import { fetchBillList } from "../../store/modules/billStore";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { useEffect} from "react";
 
 import { TabBar } from "antd-mobile"
@@ -32,7 +32,7 @@ const tabs = [
 
 const Home = () => {
     const dispatch = useDispatch();
-    const { billList } = useSelector((state) => state.bill);
+  
 
     const navigate = useNavigate();
 
