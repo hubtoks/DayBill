@@ -1,8 +1,8 @@
 const New = () => {
     return (
         <div>
-            <h1>Board</h1>
-            <p>Here is the board page</p>
+            <h1>NEW</h1>
+            <p>Here is the new page</p>
         </div>
     )
 }
