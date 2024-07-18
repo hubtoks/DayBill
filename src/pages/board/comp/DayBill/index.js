@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import './index.scss'
 import { useState,useMemo } from 'react'
-import { billTypeToName } from '../../../../contents'
+import { billTypeToName } from '../../../../utils'
 import Icon from '../../../../comp/imgComp/index'
 
 const DailyBill = ({ date, billList }) => {
