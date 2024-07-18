@@ -10,9 +10,12 @@ const billStore = createSlice({
         setBillList(state, action) {
             state.billList = action.payload;
         },
+        addBill(state, action) {   //Push存入
+            state.billList.push(action.payload);
+        }
     },
 })
-const { setBillList } = billStore.actions;
+const { setBillList, addBill } = billStore.actions;
 //异步请求
 
 
@@ -21,8 +24,14 @@ const fetchBillList = () => {
         const res = await axios.get("http://localhost:3004/ka");
         dispatch(setBillList(res.data));  //用传参的版本将整个数组传入reducer里的action.payload
     }
-    
 }
-export { fetchBillList , setBillList };  //按需导出
+//新增账单存入
+const addBillList = (data) => {
+    return async (dispatch) => {
+        const res = await axios.post("http://localhost:3004/ka", data);
+           dispatch(addBill(res.data));  
+    }
+}
+export { fetchBillList ,addBillList };  //按需导出
 const reducer = billStore.reducer;
 export default reducer
