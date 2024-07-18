@@ -1,9 +1,10 @@
 import { NavBar, DatePicker } from 'antd-mobile'
 import './index.scss'
-import { useState,useMemo } from 'react'
+import { useState,useMemo, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import dayjs from 'dayjs'
 import _ from 'lodash'
+import DayBill from './comp/DayBill/index'
 
 
 const Board = () => {
@@ -33,6 +34,21 @@ const Board = () => {
             inCome,
             total: pay + inCome
     }}, [currentBillList])
+
+    useEffect(() => {
+        setCurrentBillList(filterBillList[date] || [])
+    },[filterBillList, date])
+
+    //当前月的账单按日分组，并取出Key用于渲染列表（一个日期key有多个账单，不能用于列表渲染）
+    const DayiyList = useMemo(() => { 
+        const groupData = _.groupBy(currentBillList, (item) => dayjs(item.date).format('YYYY-MM-DD'))
+        const keys = Object.keys(groupData)
+        return {
+            groupData,
+            keys
+        }
+    }, [currentBillList])
+   
 
     return (
         <div className="monthContainer">
@@ -74,15 +90,10 @@ const Board = () => {
                         max={new Date()}
                     />
                 </div>
-                {/* 账单列表 */}
-                <div className="billList">
-                    {currentBillList.map((item) => (
-                        <div className="item" key={item.id}>
-                            <span className="money">{item.money}</span>
-                            <span className="date">{item.date}</span>
-                        </div>
-                    ))}
-                </div>
+
+                {DayiyList.keys.map(key => {
+                    return <DayBill key={key} date={key} billList={DayiyList.groupData[key]} />
+                })}
             </div>
 
         </div >
