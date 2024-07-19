@@ -5,13 +5,16 @@ import { useSelector } from 'react-redux'
 import dayjs from 'dayjs'
 import _ from 'lodash'
 import DayBill from './comp/DayBill/index'
+import { useSearchParams } from "react-router-dom";
 
 
 const Board = () => {
+    const [Params] = useSearchParams();//导航页面传参
     const [visible, setVisible] = useState(false)
     const { billList } = useSelector((state) => state.bill);
-
-    const [date, setDate] = useState(dayjs(new Date()).format('YYYY | M'))//存储格式化后的日期
+    const newDate = Params.get("newDate");
+    const [date, setDate] = useState(dayjs(newDate?newDate:new Date()).format('YYYY | M'))//存储格式化后的日期
+  
     
 
     const setMonth = (date) => {

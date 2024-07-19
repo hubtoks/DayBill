@@ -97,6 +97,104 @@
       "date": "2024-07-18T03:12:05.682Z",
       "useFor": "salary",
       "id": 21
+    },
+    {
+      "type": "pay",
+      "money": -100,
+      "date": "2024-07-15T16:00:00.000Z",
+      "useFor": "food",
+      "id": 22
+    },
+    {
+      "type": "pay",
+      "money": -100,
+      "date": "2024-05-18T16:00:00.000Z",
+      "useFor": "drinks",
+      "id": 23
+    },
+    {
+      "type": "pay",
+      "money": -100,
+      "date": "2024-07-19T01:47:13.817Z",
+      "useFor": "longdistance",
+      "id": 24
+    },
+    {
+      "type": "pay",
+      "money": -200,
+      "date": "2024-02-18T16:00:00.000Z",
+      "useFor": "game",
+      "id": 25
+    },
+    {
+      "type": "pay",
+      "money": -100,
+      "date": "2024-04-18T16:00:00.000Z",
+      "useFor": "audio",
+      "id": 26
+    },
+    {
+      "type": "pay",
+      "money": -10,
+      "date": "2024-05-18T16:00:00.000Z",
+      "useFor": "dessert",
+      "id": 27
+    },
+    {
+      "type": "pay",
+      "money": -10,
+      "date": "2024-02-18T16:00:00.000Z",
+      "useFor": "drinks",
+      "id": 28
+    },
+    {
+      "type": "pay",
+      "money": -20,
+      "date": "2024-07-19T01:58:48.307Z",
+      "useFor": "drinks",
+      "id": 29
+    },
+    {
+      "type": "pay",
+      "money": -10,
+      "date": "2024-05-18T16:00:00.000Z",
+      "useFor": "drinks",
+      "id": 30
+    },
+    {
+      "type": "pay",
+      "money": -100,
+      "date": "2024-01-18T16:00:00.000Z",
+      "useFor": "food",
+      "id": 31
+    },
+    {
+      "type": "pay",
+      "money": -10,
+      "date": "2024-02-18T16:00:00.000Z",
+      "useFor": "longdistance",
+      "id": 32
+    },
+    {
+      "type": "income",
+      "money": 300,
+      "date": "2024-07-19T02:05:40.347Z",
+      "useFor": "cashgift",
+      "id": 33
+    },
+    {
+      "type": "income",
+      "money": 10,
+      "date": "2024-07-19T02:06:42.803Z",
+      "useFor": "financial",
+      "id": 34
+    },
+    {
+      "type": "income",
+      "money": 110,
+      "date": "2024-07-19T02:06:51.096Z",
+      "useFor": "overtimepay",
+      "id": 35
     }
   ]
 }
