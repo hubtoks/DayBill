@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+
+# 本项目使用CRA创建 Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-使用CRA创建项目
+
 
 ### `记得先安装依赖npm i`
 
