@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### `记得先安装依赖npm i`
 
 
-### `npm run serve`
+### `接着启动服务器npm run serve`
 
 利用json-server实现数据mock，模拟后端数据
 
@@ -22,4 +22,4 @@ You may also see any lint errors in the console.
 
 # DayBill
 一个理财收支程序，能够新增不同种类的支出收入并展示月度账单、年度账单，使用react与antd-mobile实现
->>>>>>> origin/main
+
