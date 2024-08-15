@@ -1,25 +1,38 @@
+# React+AntdMobile
 
-# 本项目使用CRA创建 Create React App
+## 本项目使用Create React App进行初始化
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
-### `记得先安装依赖npm i`
-
-
-### `接着启动服务器npm run serve`
-
-利用json-server实现数据mock，模拟后端数据
-
-### `使用npm start启动项目`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 如何使用？
+### 从项目源码开始构建
+#### 1.git clone https://github.com/hubtoks/DayBill.git   
+#### 2.cd DayBill
+#### 3.npm i 安装依赖，如有报错，请使用npm i --force进行安装
+#### 4.npm run serve启动数据mock，模拟后端数据
+#### 5.npm start启动项目，初次启动可能较慢，请耐心等待构建完成后，访问http://localhost:3000即可
 
 
-# DayBill
-一个理财收支程序，能够新增不同种类的支出收入并展示月度账单、年度账单，使用react与antd-mobile实现
+
+## 项目功能介绍
+
+### 选择支出/收入类型,输入金额进行记账
+![image](https://github.com/user-attachments/assets/194df2a2-8a72-471a-808d-40b91c205464)
+
+
+#### 月度支出，显示每天/每月计算盈余
+![image](https://github.com/user-attachments/assets/d3c3ab09-17de-498c-81ae-de021277c61b)
+
+
+#### 年度支出，显示每月/每年盈余
+![image](https://github.com/user-attachments/assets/6d538941-e005-44b0-9096-eb284ff13124)
+
+
+
+
+
+
+
+
+
+
+
 
